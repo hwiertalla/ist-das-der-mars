@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Ist das der Mars?</title>
+</head>
+<style>
+</style>
+<body bgcolor="#000000">
+<center>
+<script language='javascript'> 
+
+function randomNum(max) { 
+  var rNum=NaN;
+  while (isNaN(rNum)) { 
+    rNum=Math.floor(Math.random()*(max)) 
+  } 
+  return rNum;
+} 
+
+var webm = new Array();
+
+webm[0]="webm/0.webm";
+webm[1]="webm/1.webm";
+webm[2]="webm/2.webm";
+webm[3]="webm/3.webm";
+webm[4]="webm/4.webm";
+webm[5]="webm/5.webm";
+webm[6]="webm/6.webm";
+webm[7]="webm/7.webm";
+webm[8]="webm/8.webm";
+webm[9]="webm/9.webm";
+webm[10]="webm/10.webm";
+webm[11]="webm/11.webm";
+webm[12]="webm/12.webm";
+webm[13]="webm/13.webm";
+webm[14]="webm/14.webm";
+webm[15]="webm/15.webm";
+webm[16]="webm/16.webm";
+webm[17]="webm/17.webm";
+webm[18]="webm/18.webm";
+webm[19]="webm/19.webm";
+webm[20]="webm/20.webm";
+webm[21]="webm/21.webm";
+webm[22]="webm/22.webm";
+webm[23]="webm/23.webm";
+webm[24]="webm/24.webm";
+webm[25]="webm/25.webm";
+
+var str = webm[randomNum(webm.length)];
+var vidTag='<video id="vid1" border="5" src="' + str + '" type="video/webm" width="500" height="500" autoplay autobuffer controls loop>';
+document.write(vidTag);
+document.close();
+
+</script>
+</center>
+</body>
+</html>

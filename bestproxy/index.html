@@ -1,0 +1,24 @@
+<html>
+<title>Live or die, Troy. Make your choice!</title>
+<center>
+<style>
+#button3{
+	position:absolute;
+	top:7;
+	left:10;
+	right:0;
+}
+</style>
+
+<a href="meme.html"><img border="0" src="Button1.PNG"></a>
+<a href="webm.html"><img border="0" src="Button2.PNG"></a>
+<img onmouseover="moveIT()" border="0" id="button3" src="Button3.PNG" />
+<script>
+function moveIT(){
+	button3.style.top=(Math.random()*600)+"px";
+	button3.style.left=(Math.random()*600)+"px";
+	button3.style.right=(Math.random()*600)+"px";
+}
+</script>
+</center>
+</html>
